@@ -26,4 +26,8 @@ Install via Homebrew:
 brew install eza zoxide zsh-autosuggestions zsh-syntax-highlighting fastfetch
 ```
 
-Install WezTerm: `brew install --cask wezterm`
+Install WezTerm:
+
+```bash
+brew install --cask wezterm
+```
