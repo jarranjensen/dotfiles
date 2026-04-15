@@ -20,14 +20,18 @@ These files are managed with symlinks. The real files live here in the repo, and
 
 ## Dependencies
 
-Install via Homebrew:
+### Homebrew
+
+| Package | Purpose |
+|---|---|
+| `eza` | Better `ls` with icons and color |
+| `zoxide` | Smarter `cd` that learns your directories |
+| `zsh-autosuggestions` | Ghost text suggestions from history |
+| `zsh-syntax-highlighting` | Colors commands as you type |
+| `fastfetch` | System info display |
+| `wezterm` | Terminal emulator |
 
 ```bash
 brew install eza zoxide zsh-autosuggestions zsh-syntax-highlighting fastfetch
-```
-
-Install WezTerm:
-
-```bash
 brew install --cask wezterm
 ```
