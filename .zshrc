@@ -12,7 +12,6 @@ zstyle ':completion:*' menu select
 # --- 2. ALIASES & TOOLS ---
 alias ls="eza --icons=always"
 alias ll="eza -lag --icons=always"
-eval "$(zoxide init zsh)"
 alias cd="z"
 
 # --- 3. HISTORY ---
@@ -27,7 +26,7 @@ bindkey '^[[A' history-beginning-search-backward
 bindkey '^[[B' history-beginning-search-forward
 
 # --- 5. PLUGINS ---
-# Note: Syntax highlighting MUST be the very last thing sourced
+# Note: Syntax highlighting must be sourced before zoxide
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -42,3 +41,9 @@ export PATH="$PATH:$HOME/.lmstudio/bin"
 # End of LM Studio CLI section
 
 export PATH="$HOME/.local/bin:$PATH"
+alias lmslogs='tail -f ~/.lmstudio/server-logs/$(date +%Y-%m)/$(date +%Y-%m-%d).1.log'
+alias startsillytavern='bash ~/Lab/AI/Projects/sillytavern-stack/scripts/startsillytavern'
+alias stopsillytavern='bash ~/Lab/AI/Projects/sillytavern-stack/scripts/stopsillytavern'
+alias monitorsillytavern='bash ~/Lab/AI/Projects/sillytavern-stack/scripts/monitorsillytavern'
+export PATH="$HOME/.npm-global/bin:$PATH"
+eval "$(zoxide init zsh)"
