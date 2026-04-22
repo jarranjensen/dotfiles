@@ -46,4 +46,7 @@ alias startsillytavern='bash ~/Lab/AI/Projects/sillytavern-stack/scripts/startsi
 alias stopsillytavern='bash ~/Lab/AI/Projects/sillytavern-stack/scripts/stopsillytavern'
 alias monitorsillytavern='bash ~/Lab/AI/Projects/sillytavern-stack/scripts/monitorsillytavern'
 export PATH="$HOME/.npm-global/bin:$PATH"
+alias pip="/opt/homebrew/bin/pip3.11"
+alias pip3="/opt/homebrew/bin/pip3.11"
+export PATH="/opt/homebrew/bin:$PATH"
 eval "$(zoxide init zsh)"
